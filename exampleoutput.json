@@ -1,0 +1,1461 @@
+[
+    {
+        "id": "1",
+        "type_name": "Application field",
+        "filter_options": [
+            {
+                "id": "ce24f7bf-b69e-48c3-b288-ca1d6af29d4c",
+                "filter_option_name": "Büro",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "60fe9c218a918"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "com.awkg.isi"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.awkg.ift"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    }
+                ]
+            },
+            {
+                "id": "b2b88387-989f-4872-8859-9d453a398ee0",
+                "filter_option_name": "Baustelle",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.awkg.ift"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.awkg.isi"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    }
+                ]
+            },
+            {
+                "id": "cfd69228-abc9-437f-85b8-23cf886d576a",
+                "filter_option_name": "Werkstatt",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "60fe9c218a918"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    }
+                ]
+            },
+            {
+                "id": "7412253e-4837-440e-b287-c51059544bd1",
+                "filter_option_name": "beim Kunden",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.awkg.ift"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    }
+                ]
+            },
+            {
+                "id": "9ac5e100-ad4f-483f-8474-f5dd22a25c32",
+                "filter_option_name": "Lager",
+                "addon_identifiers": [
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    }
+                ]
+            },
+            {
+                "id": "6897024a-79ed-478a-b9cf-84fcd1fa5d5e",
+                "filter_option_name": "Betriebswerkstatt",
+                "addon_identifiers": [
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "type_name": "Keyword",
+        "filter_options": [
+            {
+                "id": "0e65959f-d4f1-4327-bcc7-2e06c649acfb",
+                "filter_option_name": "Buchhaltung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    }
+                ]
+            },
+            {
+                "id": "df5d11e7-f687-4638-8ed6-2de20f98e200",
+                "filter_option_name": "Berichte",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    }
+                ]
+            },
+            {
+                "id": "1d48a2f8-1c99-4bec-95a1-5faa12821fca",
+                "filter_option_name": "Ablage",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    }
+                ]
+            },
+            {
+                "id": "79f1459d-3377-4590-8f04-bc88eae1c349",
+                "filter_option_name": "Projektmanagement",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    }
+                ]
+            },
+            {
+                "id": "7a3ef58f-d4c8-45d6-8f4c-280431e5593d",
+                "filter_option_name": "Organisation",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    }
+                ]
+            },
+            {
+                "id": "3b244447-7df9-4c25-865e-c360022c1801",
+                "filter_option_name": "Vertrieb",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    }
+                ]
+            },
+            {
+                "id": "7b414968-ccc4-4ff8-a032-5439f46eb466",
+                "filter_option_name": "Marketing",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    }
+                ]
+            },
+            {
+                "id": "e832b1e9-005e-4b9b-9432-368ec237845d",
+                "filter_option_name": "Werbung",
+                "addon_identifiers": [
+                    {
+                        "id": "5fb797fb97092"
+                    }
+                ]
+            },
+            {
+                "id": "35db7eb1-a96d-442a-82e8-7a91c75585bc",
+                "filter_option_name": "Versand",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    }
+                ]
+            },
+            {
+                "id": "3fbe1eac-072b-415f-81bc-79ad6e70de14",
+                "filter_option_name": "Lieferung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    }
+                ]
+            },
+            {
+                "id": "bb1b1b14-cd6d-4349-a808-b3f4c79ce57b",
+                "filter_option_name": "Handel",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    }
+                ]
+            },
+            {
+                "id": "43f56c02-9cba-452a-a02d-1dfd8400e32d",
+                "filter_option_name": "Steuerberater",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    }
+                ]
+            },
+            {
+                "id": "02c21dd8-9381-4cc8-a551-3b0971ca3593",
+                "filter_option_name": "Personal",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    }
+                ]
+            },
+            {
+                "id": "4676878b-984d-4be0-916a-f5341f37a22d",
+                "filter_option_name": "Finanzen",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    }
+                ]
+            },
+            {
+                "id": "eb78a06a-90a7-4676-b3bb-a28ed890e302",
+                "filter_option_name": "Kommunikation",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    }
+                ]
+            },
+            {
+                "id": "d367f4a5-ac37-41ae-8cef-5b244f28838b",
+                "filter_option_name": "Angebotserstellung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    }
+                ]
+            },
+            {
+                "id": "8edfa9e5-0326-4cba-a602-aa087217e9a6",
+                "filter_option_name": "Datenaustausch",
+                "addon_identifiers": []
+            },
+            {
+                "id": "5e81388d-5f20-469b-a694-8f536e248a9d",
+                "filter_option_name": "Schnittstelle",
+                "addon_identifiers": [
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    }
+                ]
+            },
+            {
+                "id": "805b7cef-5885-4d08-95f5-d6b8f2323764",
+                "filter_option_name": "Beschaffung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    }
+                ]
+            },
+            {
+                "id": "966553f2-b472-486c-804a-d96fe12397c6",
+                "filter_option_name": "Wareneingang",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    }
+                ]
+            },
+            {
+                "id": "5c042779-eec2-4540-91d7-8ad3a23deb0f",
+                "filter_option_name": "Warenausgang",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    }
+                ]
+            },
+            {
+                "id": "471e847e-9f2d-4e59-b545-6656243e8f20",
+                "filter_option_name": "Kundenbeziehung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    }
+                ]
+            },
+            {
+                "id": "93c8dac4-4c0f-4849-a6d0-2470f0100be6",
+                "filter_option_name": "Geschäftsführung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    }
+                ]
+            },
+            {
+                "id": "95b01660-1a41-4dba-ad57-a54eb9379ce1",
+                "filter_option_name": "Einsatzplanung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    }
+                ]
+            },
+            {
+                "id": "85fc82ed-d573-4856-b0ce-faca245f4653",
+                "filter_option_name": "Betriebsmittel",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    }
+                ]
+            },
+            {
+                "id": "bd51ec46-24f5-499a-bc79-55ff49029af7",
+                "filter_option_name": "Einkauf",
+                "addon_identifiers": [
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    }
+                ]
+            },
+            {
+                "id": "bb3621b7-5c1b-4a2d-ad6c-a92a2d154fbd",
+                "filter_option_name": "Lagerbestand",
+                "addon_identifiers": [
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    }
+                ]
+            },
+            {
+                "id": "56b5262c-e2bb-4a61-b068-871a49aecf57",
+                "filter_option_name": "Inventur",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    }
+                ]
+            },
+            {
+                "id": "fd7f58e2-55d5-4785-b8b9-5f790df9bf03",
+                "filter_option_name": "Zahlungsverkehr",
+                "addon_identifiers": [
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    }
+                ]
+            },
+            {
+                "id": "d477dde6-fa28-4fbd-a413-a40fd6813f0a",
+                "filter_option_name": "Banking",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    }
+                ]
+            },
+            {
+                "id": "a2e7e49a-275c-4d0e-8093-d52f34d4275f",
+                "filter_option_name": "Auswertungen",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.reports"
+                    }
+                ]
+            },
+            {
+                "id": "6e4da162-44a7-406e-8367-1888db03dd61",
+                "filter_option_name": "Automatisierung",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    }
+                ]
+            },
+            {
+                "id": "b6b4a8c7-77db-4b82-b385-e0fe6a5089c0",
+                "filter_option_name": "Service",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    }
+                ]
+            },
+            {
+                "id": "280888cb-2890-47c5-a1a3-67c6c2b008dc",
+                "filter_option_name": "Onlineshop",
+                "addon_identifiers": [
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    }
+                ]
+            },
+            {
+                "id": "a98aae97-a242-4be1-9252-04cddb5d6c6f",
+                "filter_option_name": "Mobile App",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    }
+                ]
+            },
+            {
+                "id": "869397d7-1dd0-451f-a412-975adb232f43",
+                "filter_option_name": "Vermietung",
+                "addon_identifiers": []
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "type_name": "Trade",
+        "filter_options": [
+            {
+                "id": "e678d47a-2ee6-4bb1-9bf4-4b8ac02daf6d",
+                "filter_option_name": "Haustechnik",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.awkg.isi"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.awkg.ift"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    }
+                ]
+            },
+            {
+                "id": "2e49e95f-ff4e-419f-9a18-2c8442f4510b",
+                "filter_option_name": "Bau",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "60fe9c218a918"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.awkg.isi"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.awkg.ift"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    }
+                ]
+            },
+            {
+                "id": "6f7e5a66-f5eb-4054-9cda-47911c8d6cbc",
+                "filter_option_name": "Innenausbau",
+                "addon_identifiers": [
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "com.awkg.ift"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "60fe9c218a918"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    }
+                ]
+            },
+            {
+                "id": "ee458b72-749f-40c7-84df-4317b86d1dde",
+                "filter_option_name": "Holz",
+                "addon_identifiers": [
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "60fe9c218a918"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    }
+                ]
+            },
+            {
+                "id": "422b95b7-f5ee-4e37-bb9a-0b0ffaf29bdc",
+                "filter_option_name": "Metall",
+                "addon_identifiers": [
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.awkg.isi"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    }
+                ]
+            },
+            {
+                "id": "ca73ec63-a28c-4282-9747-efc8d44d666b",
+                "filter_option_name": "Auto und Cargo",
+                "addon_identifiers": [
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.awkg.isi"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    }
+                ]
+            },
+            {
+                "id": "b1b452d5-6504-4f66-80e1-d20474e4b18e",
+                "filter_option_name": "GaLa-Bau",
+                "addon_identifiers": [
+                    {
+                        "id": "5b8e8d2bd6ac7"
+                    },
+                    {
+                        "id": "5b7fbb40825da"
+                    },
+                    {
+                        "id": "com.edooli.banking"
+                    },
+                    {
+                        "id": "com.edooli.autopilot"
+                    },
+                    {
+                        "id": "com.edooli.photodocumentation"
+                    },
+                    {
+                        "id": "5fb797fb97092"
+                    },
+                    {
+                        "id": "com.awkg.cad"
+                    },
+                    {
+                        "id": "5b62c08e9dbfc"
+                    },
+                    {
+                        "id": "com.edooli.filing"
+                    },
+                    {
+                        "id": "com.edooli.formeditor"
+                    },
+                    {
+                        "id": "com.edooli.warehouse"
+                    },
+                    {
+                        "id": "com.edooli.crm"
+                    },
+                    {
+                        "id": "com.edooli.servicereports"
+                    },
+                    {
+                        "id": "com.edooli.whatsapp"
+                    },
+                    {
+                        "id": "com.edooli.specialprices"
+                    },
+                    {
+                        "id": "com.wuerth-cs.idsoci"
+                    },
+                    {
+                        "id": "5b684fca392f1"
+                    },
+                    {
+                        "id": "com.edooli.invoicing"
+                    },
+                    {
+                        "id": "com.edooli.bankstatements"
+                    },
+                    {
+                        "id": "com.edooli.proforma"
+                    },
+                    {
+                        "id": "com.edooli.servicetickets"
+                    },
+                    {
+                        "id": "com.awkg.psa"
+                    },
+                    {
+                        "id": "com.edooli.commission"
+                    },
+                    {
+                        "id": "5a5f2859ba6e3"
+                    },
+                    {
+                        "id": "com.wuerthcs.ressources"
+                    },
+                    {
+                        "id": "com.awkg.orsy"
+                    },
+                    {
+                        "id": "com.edooli.reports"
+                    }
+                ]
+            }
+        ]
+    }
+]

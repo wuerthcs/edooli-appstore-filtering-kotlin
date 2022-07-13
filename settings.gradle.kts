@@ -1,1 +1,1 @@
-rootProject.name = "appstore-filtering-kotlin"
+rootProject.name = "filtering"
