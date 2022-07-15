@@ -1,6 +1,7 @@
 package com.wuerthcs.platform.filtering.controller
 
 import com.wuerthcs.platform.filtering.domain.*
+import com.wuerthcs.platform.filtering.service.FilteringInitService
 import com.wuerthcs.platform.filtering.service.FilteringService
 import io.swagger.v3.oas.annotations.security.SecurityRequirement
 import org.springframework.http.HttpStatus
@@ -12,8 +13,20 @@ import java.util.*
 @RestController
 @RequestMapping("/api/v1")
 class FilteringController(
-    val service: FilteringService
+    private val service: FilteringService,
+    private val initService: FilteringInitService
 ) {
+
+    @GetMapping("/init")
+    fun init() {
+        this.initService.init()
+    }
+
+    @GetMapping("/all")
+    fun all() {
+        this.service.all()
+    }
+
     @GetMapping("/get-filter-options", produces = [MediaType.APPLICATION_JSON_VALUE])
     @ResponseStatus(value = HttpStatus.OK)
     fun getFilterOptions(

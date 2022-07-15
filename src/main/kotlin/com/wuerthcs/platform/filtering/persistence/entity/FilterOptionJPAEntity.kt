@@ -5,16 +5,39 @@ import javax.persistence.*
 
 
 @Entity
-@Table(name = "filter_options")
+@Table(name = "filter_option")
 class FilterOptionJPAEntity (
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "uuid")
-    open val uuid: UUID = UUID.randomUUID(),
+    @Column(name = "uuid", length = 16)
+    val uuid: UUID = UUID.randomUUID(),
 
     @Column(name = "type")
-    open val type: Int,
+    val type: Int,
 
     @Column(name = "branding")
-    open val branding: String,
-)
+    val branding: String,
+
+    @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.EAGER)
+    @JoinColumn(name = "option")
+    val options : List<FilterOptionAddonJPAEntity>,
+
+    @ManyToMany(cascade = [CascadeType.ALL], fetch = FetchType.EAGER)
+    @JoinTable(
+        name ="option_translation",
+        joinColumns = [
+            JoinColumn(name = "option_uuid")
+        ],
+        inverseJoinColumns = [
+            JoinColumn(name = "translation_uuid")
+        ]
+    )
+    val translation : Set<FilterOptionTranslationJPAEntity>
+
+) {
+
+    override fun toString(): String {
+        return "FilterOptionJPAEntity(uuid=$uuid, type=$type, branding='$branding', options=$options, translation=$translation)"
+    }
+}

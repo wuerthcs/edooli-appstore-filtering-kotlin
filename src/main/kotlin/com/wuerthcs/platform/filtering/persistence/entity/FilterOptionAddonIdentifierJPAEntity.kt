@@ -4,23 +4,19 @@ import java.util.*
 import javax.persistence.*
 
 @Entity
-@Table(name = "filter_option_translation")
-class FilterOptionTranslationJPAEntity(
+@Table(name = "filter_option_addon_identifier")
+class FilterOptionAddonIdentifierJPAEntity(
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "uuid", length = 16)
     val uuid: UUID = UUID.randomUUID(),
 
-    @Column(name = "language")
-    val language: String,
-
-    @Column(name = "label")
-    val label: String,
-
+    @Column(name = "identifier")
+    val identifier: String
 ) {
 
     override fun toString(): String {
-        return "FilterOptionTranslationJPAEntity(uuid=$uuid, language='$language', label='$label')"
+        return "FilterOptionAddonIdentifierJPAEntity(uuid=$uuid, identifier='$identifier')"
     }
 }
