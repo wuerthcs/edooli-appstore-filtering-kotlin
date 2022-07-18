@@ -4,9 +4,9 @@ import java.util.UUID
 
 data class FilterOption(
         val uuid: UUID,
-        val type: FilterType,
+        val type: Int,
         val branding: String,
-        val order: Int?
+        val sortOrder: Int?
 ) {
 
 }

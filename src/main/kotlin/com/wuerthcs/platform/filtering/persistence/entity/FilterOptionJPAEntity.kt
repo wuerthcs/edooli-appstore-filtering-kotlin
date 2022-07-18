@@ -17,4 +17,7 @@ class FilterOptionJPAEntity (
 
     @Column(name = "branding")
     open val branding: String,
+
+    @Column(name = "sort_order")
+    open val sortOrder: Int
 )
