@@ -13,8 +13,8 @@ class FilterTypeResponse(
 ) {}
 
 class FilterOptionResponse(
-    val id: UUID,
-    val filter_option_name: String,
+    val id: String,
+    val filter_option_name: String?,
     val addon_identifiers: MutableList<AddonIdentifierResponse>
 ){}
 

@@ -7,12 +7,11 @@ import javax.persistence.*
 @Table(name = "filter_option_translations")
 class FilterOptionTranslationJPAEntity(
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "uuid")
-    open val uuid: UUID = UUID.randomUUID(),
+    open val uuid: String,
 
     @Column(name = "filter_option_uuid")
-    open val filterOptionUuid: UUID,
+    open val filterOptionUuid: String,
 
     @Column(name = "language")
     open val language: String,

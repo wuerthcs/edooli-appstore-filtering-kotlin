@@ -7,12 +7,11 @@ import javax.persistence.*
 @Table(name = "filter_options_addons")
 class FilterOptionAddonJPAEntity(
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "uuid")
-    open val uuid: UUID = UUID.randomUUID(),
+    open val uuid: String,
 
     @Column(name = "filter_option_uuid")
-    open val filterOptionUuid: UUID,
+    open val filterOptionUuid: String,
 
     @Column(name = "addon_identifier")
     open val addonIdentifier: String,

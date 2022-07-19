@@ -8,9 +8,8 @@ import javax.persistence.*
 @Table(name = "filter_options")
 class FilterOptionJPAEntity (
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "uuid")
-    open val uuid: UUID = UUID.randomUUID(),
+    open val uuid: String,
 
     @Column(name = "type")
     open val type: Int,
