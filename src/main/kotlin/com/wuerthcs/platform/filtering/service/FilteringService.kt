@@ -6,7 +6,6 @@ import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionReposi
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionTranslationRepository
 import com.wuerthcs.platform.filtering.utils.EntityMapper
 import org.springframework.stereotype.Service
-import java.util.*
 
 @Service
 class FilteringService(
@@ -33,9 +32,10 @@ class FilteringService(
         var response = FilterTypeResponse(type, "Trade", mutableListOf())
         if (optionData != null) {
             for (option in optionData) {
+                var filterTranslation = this.filterOptionTranslationRepository.getFilterOptionTranslationByLanguageAndFilterOptionUuid("de", option.uuid)
                 response.filter_options.add(FilterOptionResponse(
                         option.uuid,
-                        this.filterOptionTranslationRepository.getFilterOptionTranslationByLanguageAndUuid("de", option.uuid),
+                        filterTranslation?.get(0)?.name.toString(),
                         getAddonIdentifiersForFilterOption(option.uuid)
                 ))
             }
