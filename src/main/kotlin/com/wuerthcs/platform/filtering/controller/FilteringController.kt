@@ -11,7 +11,6 @@ import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import java.util.*
-import javax.persistence.AttributeOverride
 
 @RestController
 @RequestMapping("/api/v1")
@@ -28,12 +27,18 @@ class FilteringController(
     fun getFilterOptions(
         @RequestParam("branding", required = false) branding: String?,
         @RequestParam("language", required = false) language: String?,
-        @RequestParam("addonIdentifiers", required = false) addonIdentifiers: List<String>?,
-        @RequestParam("filterOptionsUUids", required = false) filterOptionUuids: List<UUID>?
+        @RequestParam("addonIdentifiers[]", required = false) addonIdentifiers: List<String>?,
+        @RequestParam("filterOptionsUUids[]", required = false) filterOptionUuids: List<String>?
     ): ResponseEntity<List<FilterTypeResponse>> {
+        val brandString = branding ?: "awkg"
+        val languageString = language ?: "de"
+        var response = FilteringService(filterOptionRepository, filterOptionAddonRepository, filterOptionTranslationRepository, mapper)
 
-        val response = FilteringService(filterOptionRepository, filterOptionAddonRepository, filterOptionTranslationRepository, mapper).getAllFilterOptions();
-        return ResponseEntity.ok(response)
+        return if(filterOptionUuids==null){
+            ResponseEntity.ok(response.getAllFilterOptions(brandString,languageString));
+        }else{
+            ResponseEntity.ok(response.getFilteredOptions(brandString,languageString, filterOptionUuids));
+        }
 
     }
 }

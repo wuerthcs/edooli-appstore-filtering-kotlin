@@ -6,6 +6,7 @@ import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionReposi
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionTranslationRepository
 import com.wuerthcs.platform.filtering.utils.EntityMapper
 import org.springframework.stereotype.Service
+import java.util.*
 
 @Service
 class FilteringService(
@@ -15,40 +16,48 @@ class FilteringService(
         private val mapper: EntityMapper
 ) {
 
-    fun getAllFilterOptions(): List<FilterTypeResponse> {
-        val response = listOf(
-                getFilterTypeResponseById(1, "awkg"),
-                getFilterTypeResponseById(2, "awkg"),
-                getFilterTypeResponseById(3, "awkg")
+    fun getAllFilterOptions(branding: String, language: String): List<FilterTypeResponse> {
+        return listOf(
+                getFilterTypeResponseById(1, branding, language),
+                getFilterTypeResponseById(2, branding, language),
+                getFilterTypeResponseById(3, branding, language)
         )
-        return response;
+    }
+
+    fun getFilteredOptions(branding: String, language: String, filterOptionUuids: List<String>): List<FilterTypeResponse> {
+        return listOf(
+                getFilterTypeResponseById(1, branding, language, filterOptionUuids),
+                getFilterTypeResponseById(2, branding, language, filterOptionUuids),
+                getFilterTypeResponseById(3, branding, language, filterOptionUuids)
+        )
     }
 
     private fun getFilterTypeResponseById(
             type: Int,
-            branding: String
+            branding: String,
+            lang: String,
+            optionUUIDs: List<String>? = null
     ): FilterTypeResponse {
         val optionData = this.filterOptionRepository.findFilterOptionsByTypeAndBranding(type, branding);
         var response = FilterTypeResponse(type, "Trade", mutableListOf())
         if (optionData != null) {
             for (option in optionData) {
-                var filterTranslation = this.filterOptionTranslationRepository.getFilterOptionTranslationByLanguageAndFilterOptionUuid("de", option.uuid)
+                var filterTranslation = this.filterOptionTranslationRepository.findFilterOptionTranslationByLanguageAndFilterOptionUuid(lang, option.uuid)
                 response.filter_options.add(FilterOptionResponse(
                         option.uuid,
-                        filterTranslation?.get(0)?.name.toString(),
-                        getAddonIdentifiersForFilterOption(option.uuid)
+                        filterTranslation?.name.toString(),
+                        getAddonIdentifiersForFilterOption(option.uuid, optionUUIDs)
                 ))
             }
         }
         return response
     }
 
-    fun getAddonIdentifiersForFilterOption(uuid: String): MutableList<AddonIdentifierResponse>
-    {
+    fun getAddonIdentifiersForFilterOption(uuid: String, optionUUIDs: List<String>?): MutableList<AddonIdentifierResponse> {
         var addonString: MutableList<AddonIdentifierResponse> = mutableListOf()
 
-        val addonResponses =  this.filterOptionAddonRepository.findFilterOptionsAddonsByFilterOptionUuid(uuid)
-        if (addonResponses != null) {
+        val addonResponses = this.filterOptionAddonRepository.findFilterOptionsAddonsByFilterOptionUuid(uuid)
+        if (addonResponses != null && (optionUUIDs==null || uuid in optionUUIDs)) {
             for (addon in addonResponses) {
                 addonString.add(AddonIdentifierResponse(this.mapper.map2(addon).addonIdentifier))
             }

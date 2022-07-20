@@ -7,5 +7,5 @@ import java.util.*
 import javax.persistence.Column
 
 interface FilterOptionTranslationRepository : JpaRepository<FilterOptionTranslationJPAEntity, UUID> {
-    fun getFilterOptionTranslationByLanguageAndFilterOptionUuid(language: String, uuid: String) : List<FilterOptionTranslationJPAEntity>?
+    fun findFilterOptionTranslationByLanguageAndFilterOptionUuid(language: String, uuid: String) : FilterOptionTranslationJPAEntity?
 }
