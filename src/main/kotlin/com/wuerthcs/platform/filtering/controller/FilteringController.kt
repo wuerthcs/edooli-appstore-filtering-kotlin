@@ -1,5 +1,6 @@
 package com.wuerthcs.platform.filtering.controller
 
+import com.wuerthcs.platform.filtering.FilteringApplication
 import com.wuerthcs.platform.filtering.domain.*
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionAddonRepository
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionRepository
@@ -10,7 +11,6 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
-import java.util.*
 
 @RestController
 @RequestMapping("/api/v1")
@@ -34,10 +34,10 @@ class FilteringController(
         val languageString = language ?: "de"
         var response = FilteringService(filterOptionRepository, filterOptionAddonRepository, filterOptionTranslationRepository, mapper)
 
-        return if(filterOptionUuids==null){
+        return if(filterOptionUuids==null && addonIdentifiers == null){
             ResponseEntity.ok(response.getAllFilterOptions(brandString,languageString));
         }else{
-            ResponseEntity.ok(response.getFilteredOptions(brandString,languageString, filterOptionUuids));
+            ResponseEntity.ok(response.getFilteredOptions(brandString,languageString, filterOptionUuids, addonIdentifiers));
         }
 
     }

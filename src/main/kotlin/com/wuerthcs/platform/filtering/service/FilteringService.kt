@@ -6,7 +6,6 @@ import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionReposi
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionTranslationRepository
 import com.wuerthcs.platform.filtering.utils.EntityMapper
 import org.springframework.stereotype.Service
-import java.util.*
 
 @Service
 class FilteringService(
@@ -15,8 +14,10 @@ class FilteringService(
         private val filterOptionTranslationRepository: FilterOptionTranslationRepository,
         private val mapper: EntityMapper
 ) {
+    var cachedAddonList = AddonListResultCache.addonIdentifiers
 
     fun getAllFilterOptions(branding: String, language: String): List<FilterTypeResponse> {
+        cachedAddonList.clear()
         return listOf(
                 getFilterTypeResponseById(1, branding, language),
                 getFilterTypeResponseById(2, branding, language),
@@ -24,7 +25,13 @@ class FilteringService(
         )
     }
 
-    fun getFilteredOptions(branding: String, language: String, filterOptionUuids: List<String>): List<FilterTypeResponse> {
+    fun getFilteredOptions(branding: String, language: String, filterOptionUuids: List<String>?, addonIdentifiers: List<String>?): List<FilterTypeResponse> {
+        cachedAddonList.clear()
+        if(addonIdentifiers!=null){
+            for(identifier in addonIdentifiers){
+                cachedAddonList.add(identifier)
+            }
+        }
         return listOf(
                 getFilterTypeResponseById(1, branding, language, filterOptionUuids),
                 getFilterTypeResponseById(2, branding, language, filterOptionUuids),
@@ -58,12 +65,34 @@ class FilteringService(
 
         val addonResponses = this.filterOptionAddonRepository.findFilterOptionsAddonsByFilterOptionUuid(uuid)
         if (addonResponses != null && (optionUUIDs==null || uuid in optionUUIDs)) {
+            var results: MutableList<String> = mutableListOf()
             for (addon in addonResponses) {
-                addonString.add(AddonIdentifierResponse(this.mapper.map2(addon).addonIdentifier))
+                val identifier = this.mapper.map2(addon).addonIdentifier
+                if (cachedAddonList.size == 0 || identifier in cachedAddonList) {
+                    addonString.add(AddonIdentifierResponse(identifier))
+                    results.add(identifier)
+                }
+            }
+            if (cachedAddonList.size == 0) {
+                for (item in results) {
+                    cachedAddonList.add(item)
+                }
+            } else {
+                for (cachedItem in cachedAddonList) {
+                    if (cachedItem !in results) {
+                        cachedAddonList.remove(cachedItem)
+                    }
+                }
             }
         }
         return addonString
     }
 
+}
 
+class AddonListResultCache{
+    companion object{
+        val addonIdentifiers = mutableListOf<String>()
+    }
+    var companion = Companion
 }

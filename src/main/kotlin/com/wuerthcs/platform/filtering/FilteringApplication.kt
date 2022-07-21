@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class AddressesApplication
+class FilteringApplication
 
 fun main(args: Array<String>) {
-	runApplication<AddressesApplication>(*args)
+	runApplication<FilteringApplication>(*args)
 }
