@@ -27,16 +27,28 @@ class FilteringService(
 
     fun getFilteredOptions(branding: String, language: String, filterOptionUuids: List<String>?, addonIdentifiers: List<String>?): List<FilterTypeResponse> {
         cachedAddonList.clear()
-        if(addonIdentifiers!=null){
-            for(identifier in addonIdentifiers){
+        if (addonIdentifiers != null) {
+            for (identifier in addonIdentifiers) {
                 cachedAddonList.add(identifier)
             }
         }
-        return listOf(
+        val tempList = listOf(
                 getFilterTypeResponseById(1, branding, language, filterOptionUuids),
                 getFilterTypeResponseById(2, branding, language, filterOptionUuids),
                 getFilterTypeResponseById(3, branding, language, filterOptionUuids)
         )
+        if(filterOptionUuids != null){
+            for(listItem in tempList){
+                for(filterOption in listItem.filter_options){
+                    if(filterOption.id in filterOptionUuids){
+                        for(identifier in cachedAddonList){
+                            filterOption.addon_identifiers.add(AddonIdentifierResponse(identifier))
+                        }
+                    }
+                }
+            }
+        }
+        return tempList
     }
 
     private fun getFilterTypeResponseById(
@@ -61,16 +73,21 @@ class FilteringService(
     }
 
     fun getAddonIdentifiersForFilterOption(uuid: String, optionUUIDs: List<String>?): MutableList<AddonIdentifierResponse> {
-        var addonString: MutableList<AddonIdentifierResponse> = mutableListOf()
+        var addonStrings: MutableList<AddonIdentifierResponse> = mutableListOf()
 
         val addonResponses = this.filterOptionAddonRepository.findFilterOptionsAddonsByFilterOptionUuid(uuid)
-        if (addonResponses != null && (optionUUIDs==null || uuid in optionUUIDs)) {
+        if (addonResponses != null && (optionUUIDs == null || uuid in optionUUIDs)) {
             var results: MutableList<String> = mutableListOf()
             for (addon in addonResponses) {
                 val identifier = this.mapper.map2(addon).addonIdentifier
                 if (cachedAddonList.size == 0 || identifier in cachedAddonList) {
-                    addonString.add(AddonIdentifierResponse(identifier))
+                    // do not actually fill the list because first it needs to be cleaned up
+                    // we fill that up later
                     results.add(identifier)
+                }
+                if(optionUUIDs == null){
+                    // aka get all entries
+                    addonStrings.add(AddonIdentifierResponse(identifier))
                 }
             }
             if (cachedAddonList.size == 0) {
@@ -78,21 +95,22 @@ class FilteringService(
                     cachedAddonList.add(item)
                 }
             } else {
-                for (cachedItem in cachedAddonList) {
+                for (cachedItem in cachedAddonList.reversed()) {
                     if (cachedItem !in results) {
                         cachedAddonList.remove(cachedItem)
                     }
                 }
             }
         }
-        return addonString
+        return addonStrings
     }
 
 }
 
-class AddonListResultCache{
-    companion object{
+class AddonListResultCache {
+    companion object {
         val addonIdentifiers = mutableListOf<String>()
     }
+
     var companion = Companion
 }

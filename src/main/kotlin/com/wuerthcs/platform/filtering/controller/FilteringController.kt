@@ -5,6 +5,7 @@ import com.wuerthcs.platform.filtering.domain.*
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionAddonRepository
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionRepository
 import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionTranslationRepository
+import com.wuerthcs.platform.filtering.service.AddonListResultCache
 import com.wuerthcs.platform.filtering.service.FilteringService
 import com.wuerthcs.platform.filtering.utils.EntityMapper
 import org.springframework.http.HttpStatus

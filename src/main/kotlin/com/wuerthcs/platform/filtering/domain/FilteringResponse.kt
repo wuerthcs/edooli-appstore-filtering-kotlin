@@ -13,9 +13,9 @@ class FilterTypeResponse(
 ) {}
 
 class FilterOptionResponse(
-    val id: String,
-    val filter_option_name: String?,
-    val addon_identifiers: MutableList<AddonIdentifierResponse>
+        val id: String,
+        val filter_option_name: String?,
+        var addon_identifiers: MutableList<AddonIdentifierResponse>
 ){}
 
 class AddonIdentifierResponse(
