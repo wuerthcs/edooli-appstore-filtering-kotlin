@@ -37,6 +37,7 @@ class FilteringService(
                 getFilterTypeResponseById(2, branding, language, filterOptionUuids),
                 getFilterTypeResponseById(3, branding, language, filterOptionUuids)
         )
+        // TODO: find more elegant way!
         if(filterOptionUuids != null){
             for(listItem in tempList){
                 for(filterOption in listItem.filter_options){
@@ -48,6 +49,7 @@ class FilteringService(
                 }
             }
         }
+
         return tempList
     }
 
@@ -78,8 +80,9 @@ class FilteringService(
         val addonResponses = this.filterOptionAddonRepository.findFilterOptionsAddonsByFilterOptionUuid(uuid)
         if (addonResponses != null && (optionUUIDs == null || uuid in optionUUIDs)) {
             var results: MutableList<String> = mutableListOf()
+            // TODO: find more elegant way!
             for (addon in addonResponses) {
-                val identifier = this.mapper.map2(addon).addonIdentifier
+                val identifier = this.mapper.mapFilterOptionAddon(addon).addonIdentifier
                 if (cachedAddonList.size == 0 || identifier in cachedAddonList) {
                     // do not actually fill the list because first it needs to be cleaned up
                     // we fill that up later
