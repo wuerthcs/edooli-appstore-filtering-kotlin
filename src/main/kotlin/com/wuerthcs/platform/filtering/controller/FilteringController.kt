@@ -8,6 +8,7 @@ import com.wuerthcs.platform.filtering.persistence.repository.FilterOptionTransl
 import com.wuerthcs.platform.filtering.service.AddonListResultCache
 import com.wuerthcs.platform.filtering.service.FilteringService
 import com.wuerthcs.platform.filtering.utils.EntityMapper
+import io.swagger.v3.oas.annotations.security.SecurityRequirement
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
@@ -23,6 +24,7 @@ class FilteringController(
         val mapper: EntityMapper
 ) {
     @GetMapping("/get-filter-options", produces = [MediaType.APPLICATION_JSON_VALUE])
+    @SecurityRequirement(name = "wuerthcs-appstore-filtering")
     @ResponseStatus(value = HttpStatus.OK)
 
     fun getFilterOptions(
